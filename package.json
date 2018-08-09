@@ -13,7 +13,8 @@
     "borc": "^2.0.3",
     "bs58": "^4.0.1",
     "ip": "^1.1.5",
-    "ip-address": "^5.8.9"
+    "ip-address": "^5.8.9",
+    "varint": "^5.0.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
