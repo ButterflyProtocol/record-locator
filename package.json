@@ -1,6 +1,6 @@
 {
   "name": "@dwns/record-locator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Record locator for DwNS",
   "license": "MIT",
   "main": "lib/index.js",
