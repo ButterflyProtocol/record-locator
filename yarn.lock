@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@dwns/utils@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@dwns/utils/-/utils-0.0.1.tgz#403c8b705ac4b3c989d2f7567f30346c7a617edc"
+"@dwns/utils@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@dwns/utils/-/utils-0.0.2.tgz#48c1bd1d99cd9f65a69ed883258d20a77f1faa86"
 
 asn1.js@1.0.3:
   version "1.0.3"
