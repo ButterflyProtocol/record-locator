@@ -31,7 +31,8 @@ RecordLocatorFactory = (connectors={}, options={}) ->
         @resolver.ready()
         .then (resolver) =>
           @resource = resolver.resource
-          @protos = @node.concat([@resource])
+          if @resource?
+            @protos = @node.concat([@resource])
           @record = await resolver.resolve()
         .then => resolve(@)
 
