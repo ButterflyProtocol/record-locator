@@ -1,4 +1,5 @@
 varint = require 'varint'
+IPFS = require 'ipfs-api'
 
 Utils = require '@dwns/utils'
 Protocols = require './protocols'
@@ -108,6 +109,8 @@ RecordLocatorFactory = (connectors={}, options={}) ->
       RecordLocator.argsFromBuffer(buf, memo)
     else memo
 
+  RecordLocator.Protocols = Protocols
+  RecordLocator.IPFS = IPFS
   RecordLocator
 
 module.exports = RecordLocatorFactory

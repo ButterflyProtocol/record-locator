@@ -115,7 +115,7 @@ browserify-aes@^1.0.6, browserify-aes@^1.1.1, browserify-aes@^1.2.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-bs58@^4.0.1:
+bs58@4.0.1, bs58@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/bs58/-/bs58-4.0.1.tgz#be161e76c354f6f788ae4071f63f34e8c4f0a42a"
   dependencies:
@@ -167,7 +167,7 @@ check-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
 
-cids@^0.5.3, cids@~0.5.1, cids@~0.5.2, cids@~0.5.3:
+cids@0.5.3, cids@^0.5.3, cids@~0.5.1, cids@~0.5.2, cids@~0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/cids/-/cids-0.5.3.tgz#9a25b697eb76faf807afcec35c4ab936edfbd0a4"
   dependencies:
@@ -269,8 +269,8 @@ drbg.js@^1.0.1:
     create-hmac "^1.1.4"
 
 elliptic@^6.2.3:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.0.tgz#cac9af8762c85836187003c8dfe193e5e2eae5df"
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.1.tgz#c2d0b7776911b86722c632c3c06c60f2f819939a"
   dependencies:
     bn.js "^4.4.0"
     brorand "^1.0.1"
@@ -389,9 +389,9 @@ ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
 
-ipfs-api@^22.2.4:
-  version "22.2.4"
-  resolved "https://registry.yarnpkg.com/ipfs-api/-/ipfs-api-22.2.4.tgz#226ebe5caffb5c58ae8d96d1ed3870a694b24cc7"
+ipfs-api@^23.0.0:
+  version "23.0.0"
+  resolved "https://registry.yarnpkg.com/ipfs-api/-/ipfs-api-23.0.0.tgz#112207ea421d4aeda3724de91a0319b9fe303f3e"
   dependencies:
     async "^2.6.1"
     big.js "^5.1.2"
@@ -405,8 +405,8 @@ ipfs-api@^22.2.4:
     ipfs-block "~0.7.1"
     ipfs-unixfs "~0.1.15"
     ipld-dag-cbor "~0.12.1"
-    ipld-dag-pb "~0.14.5"
-    is-ipfs "~0.3.2"
+    ipld-dag-pb "~0.14.6"
+    is-ipfs "~0.4.2"
     is-pull-stream "0.0.0"
     is-stream "^1.1.0"
     libp2p-crypto "~0.13.0"
@@ -456,7 +456,7 @@ ipld-dag-cbor@~0.12.1:
     multihashing-async "~0.5.1"
     traverse "~0.6.6"
 
-ipld-dag-pb@~0.14.5:
+ipld-dag-pb@~0.14.6:
   version "0.14.6"
   resolved "https://registry.yarnpkg.com/ipld-dag-pb/-/ipld-dag-pb-0.14.6.tgz#1b0357c7db8c1a75f8eef6e89505ddc614a7faaa"
   dependencies:
@@ -484,6 +484,15 @@ is-ipfs@~0.3.2:
     bs58 "^4.0.1"
     cids "~0.5.1"
     multihashes "~0.4.9"
+
+is-ipfs@~0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/is-ipfs/-/is-ipfs-0.4.2.tgz#06a858769cbfdac39a3e0ed1ca157e3f3fcc84fc"
+  dependencies:
+    bs58 "4.0.1"
+    cids "0.5.3"
+    multibase "0.4.0"
+    multihashes "0.4.13"
 
 is-promise@~1, is-promise@~1.0.0:
   version "1.0.1"
@@ -703,7 +712,7 @@ multiaddr@^5.0.0:
     varint "^5.0.0"
     xtend "^4.0.1"
 
-multibase@~0.4.0:
+multibase@0.4.0, multibase@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/multibase/-/multibase-0.4.0.tgz#1bdb62c82de0114f822a1d8751bcbee91cd2efba"
   dependencies:
@@ -715,9 +724,16 @@ multicodec@~0.2.6:
   dependencies:
     varint "^5.0.0"
 
-multihashes@~0.4.12, multihashes@~0.4.13, multihashes@~0.4.9:
+multihashes@0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/multihashes/-/multihashes-0.4.13.tgz#d10bd71bd51d24aa894e2a6f1457146bb7bac125"
+  dependencies:
+    bs58 "^4.0.1"
+    varint "^5.0.0"
+
+multihashes@~0.4.12, multihashes@~0.4.13, multihashes@~0.4.9:
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/multihashes/-/multihashes-0.4.14.tgz#774db9a161f81a8a27dc60788f91248e020f5244"
   dependencies:
     bs58 "^4.0.1"
     varint "^5.0.0"
