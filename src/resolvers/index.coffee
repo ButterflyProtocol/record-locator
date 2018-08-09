@@ -1,4 +1,5 @@
 ResolverClasses = [
+  require('./empty'),
   require('./ipfs')
 ]
 

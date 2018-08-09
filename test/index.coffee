@@ -16,6 +16,10 @@ describe 'RecordLocator', ->
         result = await new @recordLocator('/ipfs', {hello: 'world'}).ready()
         expect(result.toString()).to.equal('/ipfs/QmeX4LqdCABAMQtufXHRmnRc8D4eAB4JfC1dCqxtX2xpn3')
 
+      it 'should set record to empty if passed 0x', ->
+        recordLocator = await new @recordLocator('0x').ready()
+        expect(recordLocator.record.status).to.equal('empty')
+
     describe 'fromString', ->
       it 'should parse an ipfs string', ->
         result = @recordLocator.fromString('/ipfs/QmeX4LqdCABAMQtufXHRmnRc8D4eAB4JfC1dCqxtX2xpn3')

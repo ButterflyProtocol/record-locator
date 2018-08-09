@@ -27,9 +27,6 @@ class IPFSResolver
       @_resolve = @api.files.cat(@resource.toString())
       .then (file) => @rocord = cbor.decode(file)
 
-IPFSResolver.from = (record, node, connectors, options) ->
-
-
 IPFSResolver.id = 'ipfs'
 
 module.exports = IPFSResolver

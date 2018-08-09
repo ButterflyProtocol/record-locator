@@ -22,7 +22,7 @@ RecordLocatorFactory = (connectors={}, options={}) ->
           when 'node' then @node.push(proto)
           when 'resource' then @resource = proto
 
-      @resolver = new Resolvers[@resource.id]((@record ? @resource), @node, connectors, options)
+      @resolver = new Resolvers[@resource?.id ? 'empty']((@record ? @resource), @node, connectors, options)
       @ready()
 
 
