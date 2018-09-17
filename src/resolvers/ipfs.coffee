@@ -1,11 +1,11 @@
 cbor = require 'borc'
-ipfs = require 'ipfs-api'
+IpfsAPI = require 'ipfs-api'
 
 Protocols = require '../protocols'
 
 class IPFSResolver
   constructor: (@resource, @node, @connectors, @options={}) ->
-    if @node.length then @api = new ipfs(Protocols.toString(@node))
+    if @node.length then @api = new IpfsAPI(Protocols.toString(@node))
     else @api = @connectors.ipfs
 
     throw new Error('connector not found') unless @api
